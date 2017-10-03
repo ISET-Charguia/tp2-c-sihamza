@@ -3,15 +3,10 @@
 
 int main()
 {
-    float n ;
-    printf(" Donner un eniter N : ");
-    scanf("%f",&n);
-    if (n<0)
-    {
-        printf("%.0f est la valeur absolout de %.0f ",n*(-1),n);
-    }
-    else
-    {
-        printf("%.0f est la valeur absolout de %.0f ",n,n);
-    }
+    int a,b ;
+    float x ;
+    printf(" Donner un eniter A/B : ");
+    scanf("%d/%d",&a,&b);
+    x = (-1 * b) / (a +0.00) ;
+    printf (" La solution du %dx + %d = 0  ,  x = %f",a,b,x) ;
 }
