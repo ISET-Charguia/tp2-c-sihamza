@@ -2,34 +2,25 @@
 #include <stdlib.h>
 
 int main()
-{
-   int a,b,c, max,min;
-    printf(" Donner un eniter A/B/C : ");
-    scanf("%d/%d/%d",&a,&b,&c);
-    max = a ;
-    min = c ;
-
-    if (max<b)
+{   char x ;
+    printf(" donner un charactere ");
+    scanf("%c",&x);
+    if (( x >= 'A' ) && ( x <= 'Z' ))
     {
-        max = b ;
+        printf("%c est un charactere alphabitique majuscule ",x);
     }
     else
-    if (max<c)
+    if (( x >= 'a' ) && ( x <= 'z' ))
     {
-        max = c;
-    }
-
-    printf("%d est le max ! ",max) ;
-
-    if (min>b)
-    {
-        min = b;
+        printf("%c est un charactere alphabitique minuscule ",x);
     }
     else
-    if (min>a)
+    if (( x >= '0' ) && ( x <= '9' ))
     {
-        min = a;
+        printf("%c est un chiffre ",x);
     }
-
-    printf("%d est le min ",min) ;
+    else
+    {
+        printf("%c est un autre charactaire ",x);
+    }
 }
