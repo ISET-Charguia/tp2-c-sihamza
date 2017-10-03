@@ -3,15 +3,33 @@
 
 int main()
 {
-    int n ;
-    printf(" Donner un nombre N de 3 chiffre : ");
-    scanf("%d",&n);
-    if (( 99<n) && ( n<999))
+   int a,b,c, max,min;
+    printf(" Donner un eniter A/B/C : ");
+    scanf("%d/%d/%d",&a,&b,&c);
+    max = a ;
+    min = c ;
+
+    if (max<b)
     {
-        printf("%d est le nombre de centaine , %d est le nombre de dizaine ,  %d est le nombre d unité  ",n/100,(n/10)%10,n%10);
+        max = b ;
     }
     else
+    if (max<c)
     {
-        printf(" ERROR : le nombre donner N : negative ou N<99 ou N>999  ");
+        max = c;
     }
+
+    printf("%d est le max ! ",max) ;
+
+    if (min>b)
+    {
+        min = b;
+    }
+    else
+    if (min>a)
+    {
+        min = a;
+    }
+
+    printf("%d est le min ",min) ;
 }
