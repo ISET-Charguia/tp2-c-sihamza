@@ -2,25 +2,28 @@
 #include <stdlib.h>
 
 int main()
-{   char x ;
-    printf(" donner un charactere ");
-    scanf("%c",&x);
-    if (( x >= 'A' ) && ( x <= 'Z' ))
+{
+    float b ;
+    int a ;
+    printf(" donner un le temps / montant ");
+    scanf("%d/%f",&a,&b);
+
+    if (( a <= 5) && ( a > 3))
     {
-        printf("%c est un charactere alphabitique majuscule ",x);
+        printf(" le montat d interesse : %f ", b * 0.095 );
     }
     else
-    if (( x >= 'a' ) && ( x <= 'z' ))
+    if (( a > 1) && ( a <=3))
     {
-        printf("%c est un charactere alphabitique minuscule ",x);
+        printf(" le montat d interesse : %f ", b * 0.065 );
     }
     else
-    if (( x >= '0' ) && ( x <= '9' ))
+    if ( a <= 1)
     {
-        printf("%c est un chiffre ",x);
+        printf(" le montat d interesse : %f ", b * 0.085 );
     }
     else
     {
-        printf("%c est un autre charactaire ",x);
+        printf(" le montat d interesse : %f ", b * 0.058 );
     }
 }
