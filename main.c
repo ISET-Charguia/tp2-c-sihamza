@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 int main()
-{   int n ;
-    printf("Donner Un entier : ");
-    scanf("%d",&n);
-    if (( n % 3 ) == 0 )
+{
+    float n ;
+    printf(" Donner un eniter N : ");
+    scanf("%f",&n);
+    if (n<0)
     {
-        printf("%d est devesible sur 3 ",n) ;
+        printf("%.0f est la valeur absolout de %.0f ",n*(-1),n);
     }
     else
     {
-     printf("%d n est pas devesible sur 3 ",n) ;
+        printf("%.0f est la valeur absolout de %.0f ",n,n);
     }
 }
