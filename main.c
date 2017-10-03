@@ -3,10 +3,20 @@
 
 int main()
 {
-    int a,b ;
-    float x ;
-    printf(" Donner un eniter A/B : ");
-    scanf("%d/%d",&a,&b);
-    x = (-1 * b) / (a +0.00) ;
-    printf (" La solution du %dx + %d = 0  ,  x = %f",a,b,x) ;
+    int n ;
+    printf(" Donner une annee : ");
+    scanf("%d",&n);
+    if ( ( n % 400) == 0)
+    {
+        printf("%d est bissextile  ",n);
+    }
+    else
+    if ( (( n % 4) == 0) && (( n % 100) != 0 ))
+    {
+        printf("%d est bissextile  ",n);
+    }
+    else
+    {
+        printf("%d n est pas bissextile ",n);
+    }
 }
